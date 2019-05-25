@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import items from './data';
-import Client from './Contentful';
+// import Client from './Contentful';
 
-Client.getEntries({
-  content_type: "beachResortProject"
-})
-.then(res => console.log(res.items)
-);
+// Client.getEntries({
+//   content_type: "beachResortProject"
+// })
+// .then(res => console.log(res.items)
+// );
 
 const RoomContext = React.createContext();
 
@@ -26,14 +26,14 @@ const RoomContext = React.createContext();
   pets: false
   };
   // getData 
-getData = async () => {
-  try {
-    let response = await Client.getEntries
-  } catch (error) {
-    console.log(error);
+// getData = async () => {
+//   try {
+//     let response = await Client.getEntries
+//   } catch (error) {
+//     console.log(error);
     
-  }
-}
+//   }
+// }
 
 
 
